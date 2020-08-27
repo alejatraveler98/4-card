@@ -65,9 +65,7 @@ h2 {
 
 .l-container {
   padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
+  padding-right: 1rem; }
 
 .center {
   text-align: center; }
@@ -75,6 +73,8 @@ h2 {
 .main-header {
   margin-top: 1rem;
   margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
   text-align: center; }
   .main-header__title {
     font-size: var(--h2-font-size);
@@ -93,11 +93,7 @@ h2 {
   position: relative; }
   .card:nth-child(1) {
     border-top: 2px solid var(--cyan); }
-  .card:nth-child(2) {
-    border-top: 2px solid var(--red); }
   .card:nth-child(3) {
-    border-top: 2px solid var(--orange); }
-  .card:nth-child(4) {
     border-top: 2px solid var(--blue); }
   .card-image {
     position: absolute;
@@ -106,3 +102,22 @@ h2 {
     height: 4rem; }
   .card-content {
     padding: 1rem; }
+
+.section-two .card:nth-child(1) {
+  border-top: 2px solid var(--red); }
+
+.section-two .card:nth-child(2) {
+  border-top: 2px solid var(--orange); }
+
+@media screen and (min-width: 640px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; } }
+
+@media screen and (min-width: 960px) {
+  .main-container {
+    grid-template-columns: repeat(3, 1fr); } }
+
+.profile {
+  color: var(--red); }
