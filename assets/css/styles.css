@@ -1,0 +1,108 @@
+/*Para ocupar el mixin se requiere de un breakpoint, este breakpoint
+contiene las medidas que vamos a manejar para nuestras pantallas ya dependera
+de nosotros que medidas vamos a tomar porque */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue:hsl(212, 86%, 64%); }
+
+:root {
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%); }
+
+:root {
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600; }
+
+:root {
+  --h1-font-size:2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --small-font-size:.95rem; }
+
+/*Aqui colocamos todas nuestras fuentes ya
+ya sea de Google Fonts o cualquier pagina que lo 
+proporcione
+*/
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--very-dark-blue); }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
+h1 {
+  font-size: var(--h1-font-size); }
+
+h2 {
+  font-size: var(--h2-font-size); }
+
+.l-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.center {
+  text-align: center; }
+
+.main-header {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  text-align: center; }
+  .main-header__title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--weight3);
+    color: var(--grayish-blue); }
+  .main-header__subtitle {
+    color: var(--very-dark-blue);
+    font-weight: var(--weight3); }
+  .main-header__paragraph {
+    font-size: 14px; }
+
+.card {
+  height: 220px;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  position: relative; }
+  .card:nth-child(1) {
+    border-top: 2px solid var(--cyan); }
+  .card:nth-child(2) {
+    border-top: 2px solid var(--red); }
+  .card:nth-child(3) {
+    border-top: 2px solid var(--orange); }
+  .card:nth-child(4) {
+    border-top: 2px solid var(--blue); }
+  .card-image {
+    position: absolute;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem; }
+  .card-content {
+    padding: 1rem; }
